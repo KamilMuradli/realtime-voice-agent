@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Virtualenvs
+venv/
+sts_env/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and audio dumps
+logs/
+*.wav
+*.mp3
+*.pcm
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/

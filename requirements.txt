@@ -1,0 +1,24 @@
+# Voice Assistant Dependencies
+# Install with: pip install -r requirements.txt
+
+# HTTP client — async, connection pooling, HTTP/2 (required for Azure TTS streaming)
+httpx[http2]==0.28.1
+
+# Audio capture and playback
+pyaudio==0.2.14
+
+# Voice Activity Detection
+webrtcvad==2.0.10
+
+# .env file loader (reads STT/LLM/TTS keys from .env)
+python-dotenv>=1.0.0
+
+# =============================================================================
+# INSTALLATION NOTES
+# =============================================================================
+#
+# macOS — if pyaudio fails:
+#   brew install portaudio && pip install pyaudio
+#
+# If webrtcvad fails (no pre-built wheel):
+#   pip install webrtcvad-wheels
